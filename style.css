@@ -1,0 +1,355 @@
+
+
+/* NavBar all pages but index */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efefef;
+  font-size: 16px;
+  margin: 0px;
+  font-family: 'roboto';
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+  margin-bottom: 36px;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 12px 0px 12px 0px;
+  margin-left: 36px;
+  text-decoration: none;
+  color: #110D0D;
+}
+
+.nav > .nav-links > a:hover {
+  border-bottom: 1.5px solid black;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    border: 1px solid black;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #110D0D;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+
+
+/* Index Page */
+
+#herologo {
+  margin-top: 24px;
+}
+
+.logo{
+  display: block;
+  width: 10vw;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 100px;
+  max-width: 150px;
+}
+
+.break{
+  height: 20vh;
+}
+
+.pawprint{
+  width: 25vw;
+  height: 25vw;
+  margin: 20px;
+  min-width: 150px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width:600px) {
+  .pawprint {
+    margin: 2px;
+    height: 250px;
+  }
+}
+
+#pawleft {
+  background-image: url("assets/labelselfportraits.svg");
+}
+
+#pawleft:hover {
+  background-image: url("assets/labelselfportraitshover.svg");
+}
+
+#pawleft:active {
+  background-image: url("assets/labelselfportraitshover.svg");
+}
+
+#pawmiddle{
+  background-image: url("assets/labelmywork.svg");
+  margin-top: -50px;
+}
+
+#pawmiddle:hover {
+  background-image: url("assets/labelmyworkhover.svg");
+}
+
+#pawmiddle:active {
+  background-image: url("assets/labelmyworkhover.svg");
+}
+
+#pawright{
+  background-image: url("assets/labelabout.svg");
+}
+
+#pawright:hover {
+  background-image: url("assets/labelabouthover.svg");
+}
+
+#pawright:active {
+  background-image: url("assets/labelabouthover.svg");
+}
+
+#bottompaw{
+  display: flex;
+  justify-content: center;
+}
+
+.pawprints{
+  display: flex;
+  justify-content: center;
+}
+
+.mainsection{
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero{
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/* Self Portraits */
+
+#portrait1 {
+  background-image: url("assets/didiclose.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#portrait2 {
+  background-image: url("assets/didiclose2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#portrait3 {
+  background-image: url("assets/didiface.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#portrait4 {
+  background-image: url("assets/didifull.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+#portrait5 {
+  background-image: url("assets/didifull2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+#portrait6 {
+  background-image: url("assets/didipup.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+#portrait7 {
+  background-image: url("assets/didipup2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+#portrait8 {
+  background-image: url("assets/didisanta.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.portraits {
+  margin: 12px 12px 12px 12px;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.selfportraits{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+/* Works Page */
+
+.workgifs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.gifs {
+  width: 70vw;
+  height: 70vh;
+  margin: 24px;
+}
+
+#gif1 {
+  background-image: url("assets/pupfood.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#gif2 {
+  background-image: url("assets/pupsleep.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#gif3 {
+  background-image: url("assets/puppaw.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* About Page */
+
+h1 {
+  margin: 48px 0px 48px 0px;
+  font-size: 48px;
+}
+
+p {
+  margin: 0px 48px 24px 48px;
+  font-size: 18px;
+  font-style:
+}
+
+.aboutsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.socialicon {
+  margin: 12px;
+  width: 5vw;
+  min-width: 50px;
+}
+
+
+
+
+
+/* This is the end of the page. */
