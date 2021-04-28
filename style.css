@@ -295,21 +295,21 @@ body {
 }
 
 #gif1 {
-  background-image: url("assets/pupfood.gif");
+  background-image: url("assets/pupfood.GIF");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #gif2 {
-  background-image: url("assets/pupsleep.gif");
+  background-image: url("assets/pupsleep.GIF");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #gif3 {
-  background-image: url("assets/puppaw.gif");
+  background-image: url("assets/puppaw.GIF");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
